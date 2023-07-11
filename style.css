@@ -1,0 +1,154 @@
+/* Inicio Menu */
+* {
+    margin: 0;
+    padding: 0;
+}
+a { 
+    color: #fff;
+    text-decoration: none;
+
+}
+a:hover { 
+    Opacity: 0.7;
+}
+.logo {
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+nav{
+    display: flex;
+    justify-content: space-around; /* O que irá fazer com que o espaço ao redor seja a metade do espaço entre eles.*/
+    align-items: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: #23232e;
+    height: 8vh;
+}
+main{
+    background:url("Images/BG.png") no-repeat 
+    center center; 
+    background-size: cover;
+    height: 92vh;
+}
+.nav-list {
+ list-style:none;
+ display:flex;
+}
+.nav-list li {
+    letter-spacing:3px;
+    margin-left: 32px;
+}
+/* Final Menu */
+h1{
+    font-size:10vh;
+    font-weight: 0;
+    font-style: none;
+    color: blanchedalmond;
+    padding-left:10vh;
+    z-index: 0;
+    letter-spacing: 0;
+}
+h2{
+    font-size: 3vh;
+    font-weight: 0;
+    font-style: none;
+    letter-spacing: 0;
+    color: rgb(250, 239, 224);
+    padding-top:1vh;
+    padding-left:10vh;
+    z-index: 0;
+}
+/* Começo slider */
+.slider{
+    font-weight: 70vh;
+    font-style: none;
+    letter-spacing: 0;
+    color: blanchedalmond;
+    padding-top: 10vh;
+    padding-left:8vh;
+    z-index: 0;
+    width: 70vh;
+    overflow: hidden;
+
+}
+.slides{
+    width: 400%;
+    height: 400px;
+    display: flex;
+    overflow: hidden;
+}
+.slides input{
+    display:none;
+}
+
+.slide{
+    width: 25%;
+    position: relative;
+    transition: 2s;
+}
+.manual-navigation{
+    position: relative;
+    width: 60vh;
+    display: flex;
+    justify-content: center;
+}
+.manual-btn{
+    border:1px solid #23232e;
+    padding: 5px;
+    cursor: pointer;
+    transition: 1s;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+    
+}
+.manual-btn:not(:last-child) {
+    margin-right: 20px;
+}
+.manual-btn:hover{
+    background-color:#fff;
+}
+#radio1:checked ~ .first{
+    margin-left: 0%;
+}
+#radio2:checked ~ .first{
+    margin-left: -25%;
+}
+#radio3:checked ~ .first{
+    margin-left: -50%;
+}
+#radio4:checked ~ .first{
+    margin-left: -75%;
+}   
+.navigation-auto div{
+    border:1px solid #23232e;
+    padding: 5px;
+    cursor: pointer;
+    transition: 1s;
+    border-radius: 40px;
+}
+    .navigation-auto {
+        position: absolute;
+        width: 60vh;
+        margin-top: 400px;
+        display: flex;
+        justify-content: center;
+    }
+.navigation-auto div:not(:last-child){
+    margin-right: 20px;
+}
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background-color: #fff;
+}
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background-color: #fff;
+}
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background-color: #fff;
+}
+#radio4:checked ~ .navigation-auto .auto-btn4{
+    background-color: #fff;
+}
+/* Final do Slider */ 
+
